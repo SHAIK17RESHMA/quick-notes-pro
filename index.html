@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Notes Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📝 Quick Notes Pro</h1>
+            <button id="themeBtn">🌙</button>
+        </header>
+
+        <div class="note-form">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter note title"
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <div class="stats">
+                <span id="wordCount">Words: 0</span>
+                <span id="charCount">Characters: 0</span>
+            </div>
+
+            <button id="saveBtn">
+                Save Note
+            </button>
+
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search notes..."
+            >
+        </div>
+
+        <div id="notesContainer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
